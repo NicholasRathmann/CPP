@@ -12,9 +12,30 @@ def elastic(m1, v1, m2, v2):
     pass
 
 if __name__ == '__main__':
-    m1 = 4000
-    v1 = 0.095
-    m2 = 7500
-    v2 = -0.095
+    while(True):
+        try:
+            m1 = float(input("enter value for m1"))
+            break
+        except ValueError:
+            print("needs to be a float")
+    while(True):
+        try:
+            v1 = float(input("enter value for v1"))
+            break
+        except ValueError:
+            print("needs to be a float\n")
+    while(True):
+        try:
+            m2 = float(input("enter value for m2\n"))
+            break
+        except ValueError:
+            print("needs to be a float\n")
+    while(True):
+        try:
+            v2 = float(input("enter value for v2\n"))
+            break
+        except ValueError:
+            print("needs to be a float\n")
+
     elastic(m1, v1, m2, v2)
     pass
