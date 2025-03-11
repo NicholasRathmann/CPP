@@ -6,7 +6,7 @@ def elastic(m1, v1, m2, v2):
     v1f = (-1 * v1cm) + vcm
     print("v1f: " + str(v1f))
     v2cm = v2 - vcm
-    print("v2cm: " + str(v2cm) + "\n v2fcm: " + str(-1 * v2cm))
+    print("v2cm: " + str(v2cm) + "\nv2fcm: " + str(-1 * v2cm))
     v2f = (-1 * v2cm) + vcm
     print("v2f: " + str(v2f))
     pass
@@ -14,13 +14,13 @@ def elastic(m1, v1, m2, v2):
 if __name__ == '__main__':
     while(True):
         try:
-            m1 = float(input("enter value for m1"))
+            m1 = float(input("enter value for m1\n"))
             break
         except ValueError:
-            print("needs to be a float")
+            print("needs to be a float\n")
     while(True):
         try:
-            v1 = float(input("enter value for v1"))
+            v1 = float(input("enter value for v1\n"))
             break
         except ValueError:
             print("needs to be a float\n")
