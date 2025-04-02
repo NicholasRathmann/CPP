@@ -1,3 +1,14 @@
+def two_plus_two(number) -> int:
+    if number < 0:
+        return -1
+    while True:
+        if number == 2 + 2:
+            return number
+        elif number % 2 == 0:
+            number = number / 2
+        else:
+            number = 3 * number + 1
+
 def fibonachi_head():
     return 1
 
